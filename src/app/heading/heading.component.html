@@ -1,0 +1,17 @@
+<section id="heading" class="mat-typography" [ngStyle.lt-md]="{'margin-top': '30px', 'margin-bottom': '30px'}">
+  <div class="container">	
+		<div class="heading-section" fxLayout="column" fxLayoutAlign="center center">
+    		<div [class.animated]="isHeading" [class.fadeInLeft]="isHeading">
+	        	<h1 [ngStyle.xs]="{'font-size': '32px'}" [ngStyle.sm]="{'font-size': '42px'}">Bienvenido al curso de Diseño Web II con Angular</h1>
+	        </div>
+	        <div [class.animated]="isSubheading" [class.fadeInRight]="isSubheading">
+	        	<h2 [ngStyle.xs]="{'font-size': '18px'}" [ngStyle.sm]="{'font-size': '22px'}">Este sitio está hecho en Angular y es nuestro proyecto final.</h2>
+				<h2 [ngStyle.xs]="{'font-size': '18px'}" [ngStyle.sm]="{'font-size': '22px'}">Durante la vegación podrá notar diferentes efectos, nos basamos en 'Material Design'.</h2>
+	        </div>
+	        <div fxLayout="row" [class.animated]="isHeadingBtn" [class.fadeIn]="isHeadingBtn" [class.heading-btn]="isHeadingBtn">
+        		<a class="heading-button-left" mat-flat-button color="accent">Github</a>
+		        <a class="heading-button-right" mat-stroked-button color="accent">Informes</a>
+	    	</div>
+	    </div>
+   </div>
+</section>

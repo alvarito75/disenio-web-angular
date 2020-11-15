@@ -1,0 +1,41 @@
+<section id="acerca" class="mat-typography" [ngStyle.lt-md]="{'margin-top': '50px', 'margin-bottom': '50px'}">
+      <div class="container">
+
+      	<div class="about-section about-heading" fxLayout="column" fxLayoutAlign="center center">
+            <div>
+            <h2 [ngStyle.lt-md]="{'margin-bottom': '15px'}">Acerca de nosotros</h2>
+            </div>
+            <div>
+	        <h3 [ngStyle.xs]="{'font-size': '18px'}" [ngStyle.sm]="{'font-size': '22px'}">Esto sitio está desarrolladoe con Angular</h3>
+	        </div>
+        </div>
+
+        <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="nowrap" fxLayoutGap="30px">
+
+		      <div fxFlex="50">
+		          <div fxLayout="column" fxLayoutAlign="center center" [ngStyle.lt-md]="{'padding': '0 60px'}">
+		            <div>
+		              <i [ngStyle.lt-md]="{'font-size': '48px'}" class="material-icons">alarm</i>
+		            </div>
+		            <span fxFlex="30px"></span>
+		            <h2 class="about-text">Es tiempo de trabajar con Angular</h2>
+		            <span fxFlex="10px"></span>
+		            <p class="about-text">Bienvenido a Angular en la materia Diseño Web II</p>
+		          </div>
+		      </div>
+
+		      <div fxFlex="50">
+		          <div fxLayout="column" fxLayoutAlign="center center" [ngStyle.xs]="{'padding': '0 60px'}">
+		            <div>
+		              <i [ngStyle.lt-md]="{'font-size': '48px'}" class="material-icons">settings</i>
+		            </div>
+		            <span fxFlex="30px"></span>
+		            <h2 class="about-text">Se puede configurar de muchas maneras</h2>
+		            <span fxFlex="10px"></span>
+
+		            <p class="about-text">Esto es parte del aprendizaje realizado en el curso.</p>
+		          </div>
+		      </div>
+        </div>
+      </div>
+</section>

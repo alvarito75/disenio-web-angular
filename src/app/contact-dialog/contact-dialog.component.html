@@ -1,0 +1,45 @@
+<form class="formwidth" (ngSubmit)="onSubmit()">
+				  <div>
+
+				  	  <h5 class="contact-dialog-title mat-title">Contáctanos:</h5>
+
+					  <mat-form-field appearance="outline" color="accent">
+						  <mat-label>Por favor ingrese su nombre </mat-label>
+						  <input matInput placeholder="Nombre" [formControl]="nameFormControl"
+								 [errorStateMatcher]="matcher">
+						  <mat-error *ngIf="nameFormControl.hasError('required')">
+							  Nombre es <strong>requerido</strong>
+						  </mat-error>
+					  </mat-form-field>
+
+					  <mat-form-field appearance="outline" color="accent">
+						  <mat-label>Por favor ingrese su telefono </mat-label>
+						  <input matInput placeholder="Phone" [formControl]="phoneFormControl"
+								 [errorStateMatcher]="matcher">
+						  <mat-error *ngIf="phoneFormControl.hasError('required')">
+							  Telefono es <strong>requerido</strong>
+						  </mat-error>
+					  </mat-form-field>
+
+					  <mat-form-field appearance="outline" color="accent">
+						  <mat-label>Por favor ingrese su correo electrónico </mat-label>
+						  <input matInput placeholder="Email" [formControl]="emailFormControl"
+								 [errorStateMatcher]="matcher">
+						  <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+							  Por favor ingrese un correo electrónico válido
+						  </mat-error>
+						  <mat-error *ngIf="emailFormControl.hasError('required')">
+							  Correo electrónico es <strong>requerido</strong>
+						  </mat-error>
+					  </mat-form-field>
+
+					  <br>
+
+					  <div class="dialog-action" fxLayout="row" fxLayoutAlign="center center">
+					    <button class="left-button" mat-fab color="primary" type="submit"><mat-icon>done</mat-icon></button>
+					    <button class="right-button" mat-fab color="primary" (click)="dialogOff()"><mat-icon>clear</mat-icon></button>
+					   </div>
+
+				  </div>
+  					
+				</form>
